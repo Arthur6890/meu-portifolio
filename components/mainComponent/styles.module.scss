@@ -1,27 +1,10 @@
 .main {
 	background: #ffffff;
-	height: 100vh;
 	color: #242424;
 
 	&.darkMode {
 		background: #271b31;
 		color: #ffffff
-	}
-}
-
-.container {
-	width: 100%;
-	max-width: 1246px;
-	padding: 40px 0;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-
-	@media screen and (max-width: 1023px) {
-		padding: 0 26px;
-		flex-direction: column;
 	}
 
 	@media screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -29,10 +12,40 @@
 	}
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1246px;
+	padding: 40px 0;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
 .flexBoxDiv {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 150px;
 	width: 100%;
+
+	@media screen and (max-width: 1023px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.button {
+	// position: absolute;
+	// top: 20;
+	// right: 0;
 }
