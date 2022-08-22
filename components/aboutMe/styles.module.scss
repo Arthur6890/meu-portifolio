@@ -7,6 +7,7 @@
 	border-radius: 15px;
 	padding: 0 12px;
 	width: 57%;
+	transition: all 0.3s;
 
 	@media screen and (max-width: 1023px) {
 		width: 85%;
@@ -19,4 +20,44 @@
 	&.dark {
 		background: #161616
 	}
+}
+
+.aboutMe {
+	padding: 0 15px;
+	color: #ffffff;
+
+	h2 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1rem;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 35px;
+		text-transform: uppercase;
+		width: 100%;
+
+		&::after {
+			content: "";
+			height: 3px;
+			width: 50%;
+			border-radius: 50px;
+			background: var(--clr);
+			// background: aqua;
+		}
+	}
+
+	h4 {
+		font-family: 'Raleway', sans-serif;
+		font-size: 17px;
+		line-height: 22px;
+		opacity: 0.9;
+		font-weight: 300;
+	}
+}
+
+.languagesGrid {
+	display: grid;
+	// justify-items: center;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
 }

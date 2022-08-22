@@ -1,0 +1,30 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.sun {
+	display: block;
+	fill: #271B31;
+	width: 25px;
+	height: 25px;
+
+	&.active {
+		fill: #fb7ac2;
+		transform: rotate(180deg);
+		transition: all 0.2s;
+	}
+}
+
+.moon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	fill: #ffffff;
+
+	&.active {
+		transition: all 0.3s;
+		fill: #006de9;
+		transform: rotate(360deg);
+	}
+}

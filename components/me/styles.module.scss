@@ -7,6 +7,7 @@
 	border-radius: 15px;
 	padding: 0 12px;
 	width: 35%;
+	transition: all 0.3s;
 
 	@media screen and (max-width: 1023px) {
 		width: 85%;
@@ -78,17 +79,26 @@
 	text-decoration: none;
 	text-transform: capitalize;
 	font-family: 'Roboto Condensed', sans-serif;
+	transition: all 0.3s;
 	color: #000000;
 	background: #00ffff;
 	box-shadow: #0006 0 2px 4px, #0000004d 0 7px 13px -3px, #0003 0 -3px inset;
+
+
+	&:hover {
+		color: #ffffff;
+		background-color: #007979;
+	}
 
 	&.darkCv {
 		color: #ffffff;
 		background: #271b31;
 		box-shadow: #44444466 0 2px 4px, #4444444d 0 7px 13px -3px, #0003 0 -3px inset;
+
+		&:hover {
+			background-color: #452e57;
+		}
 	}
 
-	&:hover {
-		background-color: #452e57;
-	}
+
 }

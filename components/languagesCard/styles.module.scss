@@ -1,0 +1,51 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 15px 10px 25px 15px;
+	width: 85%;
+	height: 65%;
+	background-color: #242424;
+	border: 3px groove #575757;
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
+	svg {
+		color: var(--iconColor);
+		width: 25%;
+		height: 100%;
+	}
+
+	.languageName {
+		font-family: 'Roboto Condensed', sans-serif;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 35px;
+		margin-left: 5px;
+	}
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+
+	.ratingText {
+		font-family: 'Raleway', sans-serif;
+		font-size: 15px;
+		line-height: 22px;
+		margin: 0;
+		opacity: 0.9;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	svg {
+		color: var(--iconColor);
+	}
+}

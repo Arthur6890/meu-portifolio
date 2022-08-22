@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { AboutMe } from "../aboutMe";
 import { Me } from "../me";
+import { SwitchButton } from "../switchButton";
 import { Title } from "../title";
 import styles from "./styles.module.scss";
+
 
 export function MainComponent() {
 	const [darkMode, setDarkMode] = useState(false);
@@ -16,12 +18,13 @@ export function MainComponent() {
 			<div className={styles.container}>
 				<div className={styles.header}>
 					<Title darkMode={darkMode} />
-					<button className={styles.button} onClick={() => handleDarkMode()}>clica</button>
+					<SwitchButton onClick={handleDarkMode} darkMode={darkMode} />
 				</div>
 				<div className={styles.flexBoxDiv}>
 					<Me darkMode={darkMode} />
 					<AboutMe darkMode={darkMode} />
 				</div>
+
 			</div>
 		</div>
 	);
