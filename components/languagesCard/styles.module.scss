@@ -27,11 +27,16 @@
 		font-weight: 600;
 		font-size: 35px;
 		margin-left: 5px;
+
+		@media screen and (max-width: 1023px) {
+			font-size: 33px;
+		}
 	}
 }
 
 .rating {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	margin-top: 10px;
 
@@ -47,5 +52,6 @@
 
 	svg {
 		color: var(--iconColor);
+		margin: 0 2.5px;
 	}
 }

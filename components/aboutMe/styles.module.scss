@@ -8,12 +8,11 @@
 	padding: 0 12px;
 	width: 57%;
 	transition: all 0.3s;
-
 	@media screen and (max-width: 1023px) {
 		width: 85%;
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1023px) {
+	@media screen and (max-width: 1023px) {
 		margin-top: 40px
 	}
 
@@ -44,6 +43,10 @@
 			background: var(--clr);
 			// background: aqua;
 		}
+
+		@media screen and (max-width: 767px) {
+			font-size: 33px;
+		}
 	}
 
 	h4 {
@@ -57,7 +60,11 @@
 
 .languagesGrid {
 	display: grid;
-	// justify-items: center;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
+
+	@media screen and (max-width: 767px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
 }

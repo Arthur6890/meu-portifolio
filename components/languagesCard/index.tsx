@@ -6,13 +6,12 @@ import styles from "./styles.module.scss"
 
 type LanguagesCardProps = {
 	fullIcon: IconType,
-	halfIcon: IconType,
 	language: string,
 	color: string,
 	ratingValue: number
 }
 
-export function LanguagesCard({ fullIcon, halfIcon, language, color, ratingValue }: LanguagesCardProps) {
+export function LanguagesCard({ fullIcon, language, color, ratingValue }: LanguagesCardProps) {
 
 	const customStyle = {
 		"--iconColor": color,
@@ -27,14 +26,6 @@ export function LanguagesCard({ fullIcon, halfIcon, language, color, ratingValue
 		)
 	}
 
-	function returnHalfIcon() {
-		return (
-			<div>
-				{React.createElement(halfIcon)}
-			</div>
-		)
-	}
-
 	return (
 		<div className={styles.main} style={customStyle}>
 			<div className={styles.language}>
@@ -43,8 +34,8 @@ export function LanguagesCard({ fullIcon, halfIcon, language, color, ratingValue
 			</div>
 
 			<div className={styles.rating}>
-				<span className={styles.ratingText}>skill level:</span>
-				<Rating name="read-only" value={ratingValue} precision={0.5} icon={returnFullIcon()} emptyIcon={returnHalfIcon()} max={10} readOnly />
+				<span className={styles.ratingText}>skill level: (1-10)</span>
+				<Rating name="read-only" value={ratingValue} precision={1} icon={returnFullIcon()} max={ratingValue} readOnly />
 			</div>
 		</div>
 	)

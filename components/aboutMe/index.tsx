@@ -31,7 +31,7 @@ export function AboutMe({ darkMode }: AboutMeProps) {
 
 				<div className={styles.languagesGrid}>
 					{data.map((item, index) => (
-						<LanguagesCard halfIcon={item.halfIcon} fullIcon={item.fullIcon} color={item.color} language={item.language} ratingValue={item.ratingValue} key={index} />
+						<LanguagesCard fullIcon={item.fullIcon} color={item.color} language={item.language} ratingValue={item.ratingValue} key={index} />
 					))}
 				</div>
 			</div>
