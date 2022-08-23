@@ -32,23 +32,40 @@
 	font-family: "Roboto Condensed", sans-serif;
 	text-transform: capitalize;
 	font-size: 20px;
-	margin-bottom: 10px;
-	border-radius: 10px;
 	border-width: 1px 1px 1px 1px;
 	border-style: solid;
-	border-color: #464646;
+	border-color: #252525;
 	background: var(--accordionHeaderBackground);
+	transition: all 0.3s;
+
+	&:hover{
+		background-color: #161616;
+	}
 
 	&[aria-expanded="true"] {
-		margin-bottom: 0;
 		border-bottom: none;
 		border-radius: 10px 10px 0 0;
+		
 	}
 
 	span,
 	a {
 		display: flex;
 		align-items: center;
+	}
+
+	a{
+		color: var(--clr);
+		
+		&:visited{
+			color: var(--clr);
+		}
+	}
+
+	span{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
 	}
 }
 

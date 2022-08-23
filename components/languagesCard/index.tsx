@@ -34,8 +34,9 @@ export function LanguagesCard({ fullIcon, language, color, ratingValue }: Langua
 			</div>
 
 			<div className={styles.rating}>
-				<span className={styles.ratingText}>skill level: (1-10)</span>
+			<span className={styles.ratingText}>skill level: (1-10)</span>
 				<Rating name="read-only" value={ratingValue} precision={1} icon={returnFullIcon()} max={ratingValue} readOnly />
+				<span className={styles.ratingText}>{ratingValue}</span>
 			</div>
 		</div>
 	)

@@ -13,10 +13,8 @@ export function AboutMe({ darkMode }: AboutMeProps) {
 	const customStyle = {
 		"--clr": darkMode ? "#7100c7" : "#00ffff",
 		"--accordionBackground": darkMode ? "#161616" : "#555555",
-		"--accordionHeaderBackground": darkMode ? "#242424" : "#FFFFFF",
-		// "--accordionHeaderBackground": darkMode ? "yellow" : "aqua",
-		"--accordionContentBackground": darkMode ? "#1a1a1a" : "#F7F7F7",
-		// "--titleAfter": darkMode ? "#7100c7" : "#00ffff",
+		"--accordionHeaderBackground": darkMode ? "#242424" : "#2b2b2b",
+		"--accordionContentBackground": darkMode ? "#1a1a1a" : "#303030",
 		"--titleAfter": darkMode ? "yellow" : "aqua",
 
 
