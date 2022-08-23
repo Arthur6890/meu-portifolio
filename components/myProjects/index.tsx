@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -37,7 +37,7 @@ export function MyProjects() {
 
 						<div className={styles.accordionContentDiv}>
 							<div className={styles.brand}>
-								<Image src={item.brand} />
+								<Image src={item.brand} alt="logo"/>
 							</div>
 							<span className={styles.accordionContentText}>
 								{item.content}
