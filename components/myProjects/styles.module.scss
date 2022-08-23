@@ -1,0 +1,85 @@
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+	width: 100%;
+
+	&::after {
+		content: "";
+		height: 3px;
+		width: 50%;
+		border-radius: 50px;
+		background: var(--clr);
+	}
+
+	@media screen and (max-width: 767px) {
+		font-size: 30px;
+		white-space: nowrap;
+	}
+}
+
+.accordion {
+	color: #FFFFFF;
+	background: var(--accordionBackground);
+	border-radius: 10px;
+}
+
+.accordionHeader {
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #464646;
+	background: var(--accordionHeaderBackground);
+
+	&[aria-expanded="true"] {
+		margin-bottom: 0;
+		border-bottom: none;
+		border-radius: 10px 10px 0 0;
+	}
+
+	span,
+	a {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.accordionContent {
+	background: var(--accordionContentBackground);
+	border-style: solid;
+	border-color: #464646;
+	border-width: 0 1px 1px 1px;
+	border-radius: 0 0 10px 10px;
+}
+
+.accordionContentDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.brand {
+		margin: 10px 0;
+		width: 30%;
+
+		@media screen and (max-width: 1023px) {
+			width: 50%;
+		}
+	}
+
+	.accordionContentText {
+		font-family: "Raleway", sans-serif;
+		opacity: 0.9;
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 22px;
+		width: 100%;
+	}
+}
