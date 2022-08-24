@@ -8,9 +8,6 @@ import Link from 'next/link';
 import { HiOutlineExternalLink } from "react-icons/hi"
 import { AccordionData } from "./accordionData"
 
-
-
-
 export function MyProjects() {
 	return (
 		<div>
@@ -37,7 +34,7 @@ export function MyProjects() {
 
 						<div className={styles.accordionContentDiv}>
 							<div className={styles.brand}>
-								<Image src={item.brand} alt="logo"/>
+								<Image src={item.brand} alt="logo" />
 							</div>
 							<span className={styles.accordionContentText}>
 								{item.content}

@@ -7,6 +7,7 @@
 	font-size: 35px;
 	text-transform: uppercase;
 	width: 100%;
+	color: #ffffff !important;
 
 	&::after {
 		content: "";
@@ -35,17 +36,17 @@
 	border-width: 1px 1px 1px 1px;
 	border-style: solid;
 	border-color: #252525;
-	background: var(--accordionHeaderBackground);
+	background: var(--accordionHeaderBackground) !important;
 	transition: all 0.3s;
 
-	&:hover{
+	&:hover {
 		background-color: #161616;
 	}
 
 	&[aria-expanded="true"] {
 		border-bottom: none;
 		border-radius: 10px 10px 0 0;
-		
+
 	}
 
 	span,
@@ -54,18 +55,19 @@
 		align-items: center;
 	}
 
-	a{
+	a {
 		color: var(--clr);
-		
-		&:visited{
+
+		&:visited {
 			color: var(--clr);
 		}
 	}
 
-	span{
+	span {
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		color: #ffffff !important;
 	}
 }
 

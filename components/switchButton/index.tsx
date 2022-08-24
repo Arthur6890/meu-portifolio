@@ -59,15 +59,8 @@ const MaterialUISwitch = styled(Switch)(({ darkMode }: SwitchButtonProps) => ({
 
 
 export function SwitchButton({ onClick, darkMode }: SwitchButtonProps) {
-
-	const customStyle = {
-		"--sunVisibility": darkMode ? "hidden" : "visible",
-		"--moonVisibility": darkMode ? "visible" : "hidden",
-
-	} as React.CSSProperties
-
 	return (
-		<div className={styles.wrapper} style={customStyle}>
+		<div className={styles.wrapper} >
 			<BsMoonStars className={`${styles.moon} ${darkMode ? styles.active : null}`} />
 			<MaterialUISwitch sx={{ m: 1 }} defaultChecked onChange={onClick} darkMode={darkMode}
 			/>

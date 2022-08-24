@@ -13,7 +13,7 @@ type LanguagesCardProps = {
 
 export function LanguagesCard({ fullIcon, language, color, ratingValue }: LanguagesCardProps) {
 
-	const customStyle = {
+	const customStyleLanguageCard = {
 		"--iconColor": color,
 
 	} as React.CSSProperties
@@ -27,14 +27,14 @@ export function LanguagesCard({ fullIcon, language, color, ratingValue }: Langua
 	}
 
 	return (
-		<div className={styles.main} style={customStyle}>
+		<div className={styles.main} style={customStyleLanguageCard}>
 			<div className={styles.language}>
 				{React.createElement(fullIcon)}
 				<span className={styles.languageName}>{language} </span>
 			</div>
 
 			<div className={styles.rating}>
-			<span className={styles.ratingText}>skill level: (1-10)</span>
+				<span className={styles.ratingText}>skill level: (1-10)</span>
 				<Rating name="read-only" value={ratingValue} precision={1} icon={returnFullIcon()} max={ratingValue} readOnly />
 				<span className={styles.ratingText}>{ratingValue}</span>
 			</div>

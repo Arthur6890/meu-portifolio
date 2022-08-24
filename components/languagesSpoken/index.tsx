@@ -18,7 +18,7 @@ export function LanguagesSpoken({ darkMode, progress, language, proficiency }: L
 	}, [darkMode])
 
 
-	const customStyle = {
+	const customStyleLanguesSpoken = {
 		"--num": progress,
 		"--mainCircle": isDark ? "#7100c7" : "#00ffff",
 		"--backCircle": isDark ? "#222222" : "#3f3f3f",
@@ -26,7 +26,7 @@ export function LanguagesSpoken({ darkMode, progress, language, proficiency }: L
 	} as React.CSSProperties
 
 	return (
-		<div className={styles.percent} style={customStyle}>
+		<div className={styles.percent} style={customStyleLanguesSpoken}>
 			<Box sx={{ position: 'relative', display: 'inline-flex' }}>
 
 				<CircularProgress variant="determinate" value={progress} className={styles.circle} />

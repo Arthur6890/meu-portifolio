@@ -10,10 +10,11 @@ type AboutMeProps = {
 
 export function AboutMe({ darkMode }: AboutMeProps) {
 
-	const customStyle = {
+	const customStyleAboutMe = {
 		"--clr": darkMode ? "#7100c7" : "#00ffff",
 		"--accordionBackground": darkMode ? "#161616" : "#555555",
 		"--accordionHeaderBackground": darkMode ? "#242424" : "#2b2b2b",
+		// "--accordionHeaderBackground": darkMode ? "aqua" : "green",
 		"--accordionContentBackground": darkMode ? "#1a1a1a" : "#303030",
 		"--titleAfter": darkMode ? "yellow" : "aqua",
 
@@ -21,7 +22,7 @@ export function AboutMe({ darkMode }: AboutMeProps) {
 	} as React.CSSProperties
 
 	return (
-		<div className={`${styles.main} ${darkMode ? styles.dark : null}`} style={customStyle}>
+		<div className={`${styles.main} ${darkMode ? styles.dark : null}`} style={customStyleAboutMe}>
 			<div className={styles.aboutMe}>
 				<h2>
 					About me
