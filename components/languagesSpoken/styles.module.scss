@@ -10,7 +10,7 @@
 .circle {
 	width: 100px !important;
 	height: 100px !important;
-	color: var(--mainCircle);
+	color: var(--mainCircle) !important;
 	z-index: 1;
 	transition: all 0.3s;
 
@@ -26,7 +26,7 @@
 	&.circleBackground {
 		position: absolute;
 		z-index: 0;
-		color: var(--backCircle)
+		color: var(--backCircle) !important;
 	}
 
 }
