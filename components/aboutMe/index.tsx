@@ -28,7 +28,7 @@ export function AboutMe({ darkMode }: AboutMeProps) {
 					About me
 				</h2>
 				<h4>
-					{"	Hi! My name is Arthur, I'm 21 years old and I'm a student of Information Systems at UFMG. I've always been a person who fights for his dreams and doesn't give up easily. I grew up with my mother, a single mother, as my inspiration in the fight for my space in society and the world. As my resume says, I am an extremely calm person, easy to get along with, and very open-minded, who is always looking for new challenges and opportunities, who is always looking for personal and professional growth, and who never stops dreaming. Well, this is me, a simple, dreamy boy looking for his place among the greats!"}
+					{"	Hi! My name is Arthur, I'm 21 years old and I'm a student of Information Systems at UFMG. I've always been a person who fights for his dreams and doesn't give up easily. I grew up with my mother as my inspiration in the fight for my space in society and the world. As my resume says, I am an extremely calm person, easy to get along with, and very open-minded, who is always looking for new challenges and opportunities, who is always looking for personal and professional growth, and who never stops dreaming. Well, this is me, a simple, dreamy boy looking for his place among the greats!"}
 
 				</h4>
 
