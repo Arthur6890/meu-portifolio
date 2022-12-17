@@ -23,6 +23,34 @@
 	}
 }
 
+.subTitle {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 20px;
+	width: 100%;
+	margin: 0;
+	color: #ffffff !important;
+
+	@media screen and (max-width: 767px) {
+		font-size: 30px;
+		white-space: nowrap;
+	}
+
+	a {
+		color: var(--clr);
+		margin-left: .5rem;
+	}
+
+}
+
+.exception {
+	@extend .subTitle;
+	font-size: 15px;
+	margin: 5px 0 25px;
+}
+
 .accordion {
 	color: #FFFFFF;
 	background: var(--accordionBackground);
@@ -67,7 +95,7 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
-		color: #ffffff !important;
+		color: #ffffff;
 	}
 }
 
@@ -100,6 +128,27 @@
 		font-size: 17px;
 		line-height: 22px;
 		width: 100%;
-		color: #FFFFFF !important;
+		color: #FFFFFF;
+	}
+
+	.technologyUsed {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.technologyUsedTitle {
+		@extend .accordionContentText;
+		width: fit-content;
+		font-weight: 700;
+		color: var(--clr);
+	}
+
+	.technologyName {
+		@extend .accordionContentText;
+
+		margin-left: .5rem;
 	}
 }
