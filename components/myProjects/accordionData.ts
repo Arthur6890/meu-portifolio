@@ -25,7 +25,7 @@ export const AccordionData = [{
 	brand: Paredao,
 },
 {
-	title: "the uge app",
+	title: "the uge app (not done yet)",
 	content: `This is a game developed with React Native. This game is an allusion to Flappy Bird, but using some content from my friends' group, named "UGE". That's why there are some contents and assets that may not make sense to some users. As I developed this game only for fun and academic purposes, I didn't upload it to PlayStore or Apple Store, so the redirect icon in the upper-right corner will redirect you directly to the GitHub repository of the game`,
 	link: "https://github.com/Arthur6890/the-uge-app",
 	technologyUsed: "React Native, Typescript",
